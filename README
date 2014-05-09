@@ -1,4 +1,6 @@
+
 This C++ program is used for the sparse multiple regression model: LapMOR. 
+If you have any questions, please contact Jie Yang (jyang2@cs.hku.hk)
 
 Usage: 
 Please use src/train_LapMOR.h to train you model. 
@@ -6,7 +8,7 @@ Note that for a regression: Y = XB + E,
 you need to specify: X,Y,lambda1 and lambda2; 
 our algorithm will estimate B and A; 
 
-Please use cross-validation to train you lambda1 (lambda1>0) and lambda2 (0<=lambda2<=1).
+Please use cross-validation to train lambda1 (lambda1>0) and lambda2 (0<=lambda2<=1).
 
 Detailed Parameters: 
 input - the matrix X, 
