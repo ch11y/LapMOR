@@ -1,32 +1,20 @@
-###############################################################################
-Copyright (C) 2013 Jie Yang (jyang2@cs.hku.hk)
+This C++ program is used for the sparse multiple regression model: LapMOR. 
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
-Jie Yang(jyang2@cs.hku.hk)
-Dept. of Computer Science,
-The University of Hong Kong,
-Pokfulam Road,
-Hong Kong SAR,
-China
-###############################################################################
 Usage: 
-Please use src/train_LapMOR.h to train you model.
-input is the matrix X, output is the matrix Y, B is the regression coeficien, A is a sparsity of each row, lambda1 and lambda2 are the regularization parametters. 
-Requirement:
-This software is suitable for all unix-like system with gcc installed.
+Please use src/train_LapMOR.h to train you model. 
+Note that for a regression: Y = XB + E,
+you need to specify: X,Y,lambda1 and lambda2; 
+our algorithm will estimate B and A; 
 
-This program is for LapMOR/LGMOR algorithm, which can predict linear interactions among two set of variables. 
-Please cite our paper: Jie Yang, Henry C.M. Leung, S.M. Yiu, Yunpeng Cai, Francis Y.L. Chin, Intra- and Inter-sparse Multiple Output Regression with Application on Environmental Microbial Community Study, The IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2013), also will appear in BMC Bioinformatics.
+Please use cross-validation to train you lambda1 (lambda1>0) and lambda2 (0<=lambda2<=1).
+
+Detailed Parameters: 
+input - the matrix X, 
+output - the matrix Y,
+B - the regression coeficients, 
+A - the sparsity of each row, 
+lambda1 - a positive sparsity parameter specified by user. 
+lambda2 - the proportion of Laplacian prior specified by user. 
+
+Refercences:
+Jie Yang, Henry C.M. Leung, S.M. Yiu, Yunpeng Cai, Francis Y.L. Chin, Intra- and Inter-sparse Multiple Output Regression with Application on Environmental Microbial Community Study, The IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2013), also will appear in BMC Bioinformatics.
