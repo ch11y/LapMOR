@@ -19,15 +19,13 @@ Jie Yang(jyang2@cs.hku.hk)
 Dept. of Computer Science,
 The University of Hong Kong,
 Pokfulam Road,
-Hong Kong,
+Hong Kong SAR,
 China
 ###############################################################################
 
-Requirement
+Requirement:
 
 This software is suitable for all unix-like system with gcc installed.
 
-Please cite our paper: 
-Jie Yang, Henry C.M. Leung, S.M. Yiu, Yunpeng Cai, Francis Y.L. Chin, Intra- and Inter-sparse Multiple
-Output Regression with Application on Environmental Microbial Community Study, The IEEE International
-Conference on Bioinformatics and Biomedicine (BIBM 2013), also will appear in BMC Bioinformatics.
+This program is for LapMOR/LGMOR algorithm, which can predict linear interactions among two set of variables. 
+Please cite our paper: Jie Yang, Henry C.M. Leung, S.M. Yiu, Yunpeng Cai, Francis Y.L. Chin, Intra- and Inter-sparse Multiple Output Regression with Application on Environmental Microbial Community Study, The IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2013), also will appear in BMC Bioinformatics.
