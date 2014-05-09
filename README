@@ -22,9 +22,10 @@ Pokfulam Road,
 Hong Kong SAR,
 China
 ###############################################################################
-
+Usage: 
+Please use src/train_LapMOR.h to train you model.
+input is the matrix X, output is the matrix Y, B is the regression coeficien, A is a sparsity of each row, lambda1 and lambda2 are the regularization parametters. 
 Requirement:
-
 This software is suitable for all unix-like system with gcc installed.
 
 This program is for LapMOR/LGMOR algorithm, which can predict linear interactions among two set of variables. 
