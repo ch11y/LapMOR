@@ -240,7 +240,9 @@ void solve_glasso(const vector < VD > &g_input , const VD &g_output , VD& g_B , 
 }
 void train_LapMOR(const vector< VD > & input,  const vector< VD > & output ,  
         vector< VD > & B , VD& A ,  double & lambda1, double&  lambda2){
-    int n = SZ(input), p = SZ(input[0]), q = SZ(output[0]);
+    int n = SZ(input), p = SZ(input[0]), q = SZ(output[0]); 
+    A = vector< double > (p, 1.0/p);
+    B = vector< vector<double> > (p, vector<double>(q, 0.));
     vector < VD > g_input(n*q); 
     VD g_output(n*q);  
     VD g_B( p * q ) ; 
